@@ -1,0 +1,257 @@
+div.xtx{
+    background-color:rgb(243, 243, 243);
+}
+div.xtx1{
+    width: 1240px;
+    margin: 0 auto;
+    position: relative;
+}
+.xtx1 ul li .xtx2{
+    /* transition: margin-left 2s; */
+    transition: all 2s cubic-bezier(0,1,0,0.9) 0s;
+}
+.xtx1 ul li .xtx2:hover{
+    /* margin-left: 10px; */
+    transform: translate(10px,0);
+    background-color:rgba(60,179,113,0.2);
+}
+.xtx1 li:hover{background-color: rgba(60,179,113,0.8);}
+
+.xtx1 li{
+    background-color: rgba(0,0,0,0.5);
+    width: 240px;
+}
+div .xtx1 li .xtx2{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+    color: white;
+    padding: 0 30px;
+}
+
+.xtx3{
+    width: 1000px;
+    height: 500px;
+    margin: 1rem auto;
+    overflow: hidden;
+    /* position: relative; */
+    position: absolute;
+    top: -16px;
+    left: 240px;
+}
+.xtx3 .xtx4 {
+    width: 5000px;
+    height: 500px;
+    position: absolute;
+    display: flex;
+    animation: run 15s ease infinite;
+}
+.xtx4 li{
+    flex: 0 0 auto;
+    width: 1000px;
+}
+.xtx4 li a,.xtx4 li img{
+    display: block;
+    width: 1000px;
+    height: 500px;
+}
+/*动画关键帧*/
+@keyframes run{
+    0%,10%{
+        transform: translateX(0);
+    }
+    20%,30%{
+        transform: translateX(-1000px);
+    }
+    40%,50%{
+        transform: translateX(-2000px);
+    }
+    60%,70%{
+        transform: translateX(-3000px);
+    }
+    80%,90%{
+        transform: translateX(-4000px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+
+.xtx5{
+    width: 1240px;
+    height: 500px;
+    padding-top: 30px;
+    margin: 0 auto;
+}
+.xtx6{
+    width: 1240px;
+    height: 100px;
+    float: left;
+}
+.xtx6 a{
+    float: right;
+}
+.xtx6 a:hover{
+    color: #39bfa3;
+}
+.xtx6 p{
+    font-size: 30px;
+    font-weight: 2000px;
+    height: 50px;
+    line-height: 100px;
+}
+.xtx6 p span{
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-left: 30px;
+}
+
+
+.xtx7 a img{
+    width: 305px;
+    height: 305px;
+    margin-right: 5px;
+}
+.xtx7{
+    float: left;
+    position: relative;
+    transition: all 0.7s;
+}
+.xtx7 p{
+    margin-right: 5px;
+    width: 305px;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgba(127,255,212,0.2);
+}
+.xtx7 div{
+    padding-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+    margin-right: 5px;
+    background-color: rgba(127,255,212,0.2);
+    color: rgba(255,64,64, 1);
+}
+.xtx7 .xtx8{
+    position: absolute;
+    bottom: 300px;
+    left: 20px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    color: #39bfa3;
+    border: 2px solid #39bfa3;
+    border-radius: 8px;
+    padding: 10px 0;
+}
+
+
+.xtx9{
+    float: left;
+    transition: all 0.7s;
+}
+.xtx9 a img{
+    width: 305px;
+    height: 305px;
+    margin-right: 5px;
+}
+.xtx9 p{
+    margin-right: 5px;
+    width: 305px;
+    text-align: center;
+    font-size: 22px;
+    background-color: rgba(255,255,255,1);
+}
+.xtx9 div{
+    padding-bottom: 15px;
+    text-align: center;
+    margin-right: 5px;
+    font-size: 15px;
+    background-color: rgba(255,255,255,1);
+    color: rgba(0,0,0, 0.5);
+}
+
+div .xtx7:hover,div .xtx9:hover{
+    box-shadow: 0 0 5px rgba(0, 0, 0,0.7);
+    transform: translate(0,-10px);
+}/*图片效果*/
+
+.xtx10{
+    margin-top: 5px;
+    background-color:rgb(243, 243, 243);
+}
+.xtx10 .xtx6 a{
+    position: relative;
+}
+.xtx10 .xtx6 a div{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background-color: rgb(223, 223, 223);
+}
+.xtx10 .xtx6 a div:hover{background-color: #39bfa3;}
+.xtx10 .xtx6 a div.a2{
+    position: absolute;
+    left: -70px;
+    top: -10px;
+}
+.xtx10 .xtx6 a div.a3{
+    position: absolute;
+    left: -40px;
+    top: -10px;
+}
+.xtx10 div .xtx11 img{
+    width: 238px;
+    height: 306px;
+}
+
+
+.xtx12{
+    width: 1240px;
+    height: 750px;
+    padding-top: 30px;
+    margin: 0 auto;
+}
+.xtx13 li{
+    float: left;
+}
+.xtx13{
+    margin-left: 600px;
+    margin-bottom: 10px;
+}
+.xtx13 li a{
+    display: block;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+.xtx13 li a:hover{
+    color: white;
+    background-color: #39bfa3;
+}
+
+.xtx9.xtx14 img{
+    width: 240px;
+    height: 620px;
+}
+.xtx7.xtx15 img{
+    width: 200px;
+    height: 180px;
+}
+.xtx7.xtx15{
+    margin-left: 40px;
+}
+.xtx7.xtx15 p{
+    text-align: left;
+    width: 200px;
+    padding: 0 15px;
+    background-color: white;
+    font-size: 15px;
+}
+.xtx7.xtx15 div{
+    text-align: left;
+    background-color: white;
+    padding: 0 15px;
+}

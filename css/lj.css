@@ -1,0 +1,58 @@
+
+img {
+    width: 1300px;
+  }
+
+  .lj0 {
+    display: block;
+    width: 1380px;
+    height: 2000px;
+    margin: 0 auto;
+  }
+
+  .lj1 {
+    margin-top: 10px;
+    width: 1200px;
+  }
+
+  .lj1 {
+    display: block;
+  }
+
+  .lj2 {
+    display: block;
+    margin: 10px;
+    background-color: white;
+    width: 150px;
+  }
+
+  /* .lj0 .nonefix {
+    float: none;
+  } */
+
+  .lj3 {
+    display: block;
+    font-size: 25px;
+  }
+
+  .lj2 li {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .lj2 li:hover {
+    color: aqua;
+    list-style: circle;
+  }
+
+  .sp-size img {
+    width: 100px;
+  }
+
+  .lj4 {
+    display: block;
+    margin: 10px;
+    width: 150px;
+    height: 124px;
+    background-color: white;
+  }

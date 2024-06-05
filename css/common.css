@@ -1,0 +1,238 @@
+/* 重复样式 */
+
+.wrapper {
+    width: 1240px;   
+    margin: 0 auto; 
+}
+
+/* 快捷导航 */
+.shortcut{
+    height: 52px;
+    background-color: #333;
+}
+
+.shortcut .wrapper{
+    height: 52px;
+}
+
+.shortcut .wrapper ul{
+    float: right;
+}
+
+.shortcut .wrapper ul li{
+    float: left;
+    line-height: 52px;
+}
+
+.shortcut .wrapper ul li a{
+    padding: 0 16px;
+    border-right: 1px solid #666;
+    font-size: 14px;
+    color: #dcdcdc;
+}
+.shortcut .wrapper ul li a:hover{
+    color: #27ba9b;
+}
+
+.shortcut .wrapper a span{
+    display: inline-block;
+    width: 11px;
+    height: 16px;
+    background-image: url(../static/images/sprites.png);
+    background-position: -160px -70px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+/* 消除a的边框，最后一个a不加边框 */
+.shortcut .wrapper ul li:last-child a{
+    border: 0;
+}
+
+/* 头部 */
+.header{
+    margin: 30px auto;
+    height: 70px;
+}
+
+.logo{
+    float: left;
+    width: 207px;
+    height: 70px;
+}
+
+/* logo搜索引擎优化 */
+.logo h1{
+    width: 207px;
+    height: 70px;
+}
+
+.logo h1 a{
+    display: block;
+    width: 207px;
+    height: 70px;
+    background-image: url(../static/images/logo.png);
+    background-size: contain;
+   
+}
+.nav{
+    float: left;
+    margin: left 40px; 
+    height: 70px;
+}
+
+.nav li{
+    float: left;
+    line-height: 70px;
+    margin-left: 48px;
+}
+
+.nav li a{
+    padding-bottom: 7px;
+}
+
+.nav li a:hover{
+    color: #27ba9b;
+    border-bottom: 1px solid #27ba9b;
+}
+
+.search{
+    position: relative;
+    float: left;
+    margin-top: 24px;
+    margin-left: 34px;
+    width: 172px;
+    height: 30px;
+    border-bottom: 2px solid #e7e7e7;
+}
+
+.search input{
+    padding-left: 30px;
+    width: 172px;
+    height: 28px;
+}
+
+.search input::placeholder{
+    font-size: 14px;
+    color: #ccc;
+}
+.search span{
+    position: absolute;
+    left: 2px;
+    top: 0;
+    /* display: inline-block; */
+    width: 18px;
+    height: 18px;
+    background-image: url(../static/images/sprites.png);
+    background-position: -79px -69px ;
+}
+
+.car{
+    position: relative;
+    float: left;
+    width: 23px;
+    height: 23px;
+    margin-top: 28px;
+    margin-left: 15px;
+    background-image: url(./static/images/sprites.png);
+    background-position: -119px -69px;
+    vertical-align: middle;
+}
+
+.car span{
+    /* 绝对定位，盒子已经具备了行内块特点 */
+    position: absolute;
+    right: -13px;
+    top: -6px;
+    width: 20px;
+    height: 15px;
+    background-color: #e26237;
+    border-radius: 8px;
+    font-size: 13px;
+    text-align: center;
+    line-height: 15px;
+    color: #fff;
+}
+
+/* 底部 */
+.footer{
+    float: none;
+    height: 342px; 
+    background-color: #333;
+    
+}
+
+.footer .wrapper{
+    width: 1450px;  
+    margin: 0 auto;
+    border-bottom: 1px solid #434343;
+}
+
+.footer .top{
+    position: relative;
+    padding-top: 59px;
+    padding-left: 115px;
+    padding-right: 115px;
+    height: 175px;  
+}
+
+.footer hr{
+    width: 1393px;
+    height: 1px;
+    margin: 0 auto;
+    border-color: #333;
+}
+
+.footer .top li{
+    float: left;
+    margin-right: 300px;
+    width: 195px;
+    height: 58px;
+    line-height: 58px;
+}
+
+.footer .top li:last-child{
+    margin-right: 0;
+}
+
+/* 伪元素添加的标签 行内 */
+
+.footer .top li::before{
+    position: absolute;
+    content:'';
+    width: 58px;
+    height: 58px;
+    background-image: url(./static/images/sprites.png);
+    vertical-align: middle;
+}
+
+.footer .top li span{
+    font-size: 28px;
+    margin-left: 77px;
+    color: #fff;   
+}
+
+.footer .top li:nth-child(2)::before{
+ background-position: -64px 0; 
+}
+
+.footer .top li:nth-child(3)::before{
+ background-position: -130px 0; 
+}
+
+.footer .buttom {
+    padding-top: 40px;
+    font-size: 14px;
+    color: #8e8e8e;
+    text-align: center;
+
+}
+
+.footer .buttom a{
+    font-size: 14px;
+    color: #8e8e8e;
+}
+
+.footer .buttom p{
+    margin-bottom: 20px;
+}

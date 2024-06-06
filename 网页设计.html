@@ -13,67 +13,118 @@
   <link rel="stylesheet" href="./css/common.css">
   <!-- <link rel="stylesheet" href="./css/lj.css"> -->
   <!-- <link rel="stylesheet" href="./css/index.css"> -->
-  
-  <style> 
-    
-img {
-    width: 1300px;
-  }
 
-  .lj0 {
-    display: block;
-    width: 1380px;
-    height: 2000px;
-    margin: 0 auto;
-  }
+  <style>
+    .lj1 img {
+      width: 1190px;
+    }
 
-  .lj1 {
-    margin-top: 10px;
-    width: 1200px;
-  }
+    .lj0 {
+      display: block;
+      width: 1380px;
+      height: 2000px;
+      margin: 0 auto;
+    }
 
-  .lj1 {
-    display: block;
-  }
+    .lj1 {
+      margin-top: 10px;
+      width: 1200px;
+    }
 
-  .lj2 {
-    display: block;
-    margin: 10px;
-    background-color: white;
-    width: 150px;
-  }
+    .lj1 {
+      display: block;
+    }
 
-  /* .lj0 .nonefix {
-    float: none;
-  } */
+    .lj2 {
+      display: block;
+      margin: 10px;
+      background-color: white;
+      width: 150px;
+    }
 
-  .lj3 {
-    display: block;
-    font-size: 25px;
-  }
+    .lj3 {
+      display: block;
+      font-size: 25px;
+    }
 
-  .lj2 li {
-    padding: 25px;
-    text-align: center;
-  }
+    .lj2 li {
+      padding: 25px;
+      text-align: center;
+    }
 
-  .lj2 li:hover {
-    color: aqua;
-    list-style: circle;
-  }
+    .lj2 li:hover {
+      color: aqua;
+      list-style: circle;
+    }
+     .lj4 a{
+      position: relative;
+      bottom: 20px;
+      color: #b6b6b6;
+    }
 
-  .sp-size img {
-    width: 100px;
-  }
+    .sp-imgsize {
+      display: block;
+      width: 500px;
+      height: 100px;
+    }
 
-  .lj4 {
-    display: block;
-    margin: 10px;
-    width: 150px;
-    height: 124px;
-    background-color: white;
-  }
-  </style> 
+    .sp-imgsize img {
+      width: 98px;
+    }
+
+    .lj4 {
+      margin: 10px;
+      padding: 10px;
+      display: block;
+      width: 1190px;
+      height: 200px;
+      background-color: white;
+    }
+
+    .lj4 ul {
+      margin-top:10px ;
+      height: 100px;
+      border: 1px, solid, #b6b6b650;
+    }
+
+    .lj4 li {
+      border-width: 0 1px 0 0;
+      border-style: solid;
+      border-color: #b6b6b650;
+    }
+
+    .sp-name {
+      padding: 25px 0 0 0;
+      width: 220px;
+      overflow: hidden;
+      /*超出部分隐藏*/
+      white-space: nowrap;
+      /*禁止换行*/
+      text-overflow: ellipsis;
+      /*省略号*/
+    }
+
+    .sp-size {
+      font-size: 14px;
+      color: #b6b6b6;
+    }
+
+    .sp-zt {
+      position: relative;
+      bottom: 35px;
+      right: 80px;
+      color: #e05e30;
+    }
+    .sp-price{
+      text-align: center;
+      height:100px;
+      width:200px;
+    }
+    .sp-zprice{
+      margin-top: 10px;
+      color: red;
+    }
+  </style>
 </head>
 
 <body>
@@ -201,10 +252,24 @@ img {
       </div>
     </div>
     <div class="lj4 fl">
-      <span>我的订单</span>
-      <div class="sp-size"><img src="./static/uploads/clothes_goods_5.jpg" alt=""></div>
-      <div></div>
-      <div></div>
+      <h5>我的订单</h5>
+      <a class="fr" href="#">查看全部 ></a>
+      <ul>
+        <li class="sp-imgsize fl">
+          <img class="fl" src="./static/uploads/clothes_goods_5.jpg" alt="">
+          <p class="sp-name">拉夫劳伦t恤男正品圆领短袖好看好看好看</p>
+          <p class="sp-size">颜色：白色 尺码：M 数量：1</p>
+          <p class="sp-zt fr">待付款</p>
+        </li>
+        <li class="sp-price fl">
+          <p class="sp-zprice">¥99.00</p>
+          <p>(含运费：¥10.00元)</p>
+          <p>在线支付</p>
+        </li>
+        <li>立即付款</li>
+      </ul>
+
+
     </div>
   </div>
 

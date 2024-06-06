@@ -15,6 +15,16 @@
   <!-- <link rel="stylesheet" href="./css/index.css"> -->
 
   <style>
+    body {
+      background-color: #f6f6f6;
+    }
+    
+    .nb{
+      padding-top: 0.1px;
+      height: 130px;
+      background-color: white;
+    }
+
     .lj1 img {
       width: 1190px;
     }
@@ -65,7 +75,7 @@
 
     .sp-imgsize {
       display: block;
-      width: 700px;
+      width: 698px;
       height: 200px;
     }
 
@@ -78,7 +88,7 @@
       padding: 10px;
       display: block;
       width: 1190px;
-      height: 500px;
+      height: 470px;
       background-color: white;
     }
 
@@ -118,6 +128,12 @@
       color: #e05e30;
     }
 
+    .sp-imgsize a {
+      position: relative;
+      right: 62px;
+      color: #b6b6b6;
+    }
+
     .sp-price {
       font-size: 20px;
       text-align: center;
@@ -130,7 +146,8 @@
       color: red;
     }
 
-    .sp-xq {
+    .lj4 .sp-xq {
+      border: 0;
       height: 190px;
       width: 200px;
       font-size: 20px;
@@ -140,7 +157,7 @@
     .sp-fk {
       height: 30px;
       width: 120px;
-      margin-top: 35px;
+      margin-top: 50px;
       margin-left: 40px;
       background-color: #27ba9b;
     }
@@ -166,31 +183,33 @@
     </div>
   </div>
   <!-- 头部 -->
-  <div class="header wrapper">
-    <div class="logo">
-      <h1><a href="#"></a></h1>
-    </div>
-    <div class="nav">
-      <ul>
-        <li><a href="#">生鲜</a></li>
-        <li><a href="#">美食</a></li>
-        <li><a href="#">餐厨</a></li>
-        <li><a href="#">电器</a></li>
-        <li><a href="#">居家</a></li>
-        <li><a href="#">洗护</a></li>
-        <li><a href="#">孕婴</a></li>
-        <li><a href="#">服装</a></li>
-        <li><a href="#"></a></li>
+  <div class="nb">
+    <div class="header wrapper">
+      <div class="logo">
+        <h1><a href="#"></a></h1>
+      </div>
+      <div class="nav">
+        <ul>
+          <li><a href="#">生鲜</a></li>
+          <li><a href="#">美食</a></li>
+          <li><a href="#">餐厨</a></li>
+          <li><a href="#">电器</a></li>
+          <li><a href="#">居家</a></li>
+          <li><a href="#">洗护</a></li>
+          <li><a href="#">孕婴</a></li>
+          <li><a href="#">服装</a></li>
+          <li><a href="#"></a></li>
 
-      </ul>
-    </div>
-    <div class="search">
-      <input type="text" placeholder="搜一搜">
-      <!-- 定位 放大镜 -->
-      <span></span>
-    </div>
-    <div class="car">
-      <span>2</span>
+        </ul>
+      </div>
+      <div class="search">
+        <input type="text" placeholder="搜一搜">
+        <!-- 定位 放大镜 -->
+        <span></span>
+      </div>
+      <div class="car">
+        <span>2</span>
+      </div>
     </div>
   </div>
   <div class="lj0">
@@ -296,7 +315,25 @@
           <p><a href="#">取消订单</a></p>
         </li>
       </ul>
-
+      <ul>
+        <li class="sp-imgsize fl">
+          <img class="fl" src="./static/uploads/clothes_goods_6.jpg" alt="">
+          <p class="sp-name">李宁跑步鞋男鞋空气弧耐用好看好看好看</p>
+          <p class="sp-size">颜色：灰色 尺码：42 数量：1</p>
+          <p class="sp-zt fr">代收货</p>
+          <a class="fr" href="#">查看物流</a>
+        </li>
+        <li class="sp-price fl">
+          <p class="sp-zprice">¥199.00</p>
+          <p>(含运费：¥10.00元)</p>
+          <p>在线支付</p>
+        </li>
+        <li class="sp-xq fl">
+          <p class="sp-fk"><a href="#">确认收货</a></p>
+          <p><a href="#">查看详情</a></p>
+          <p><a href="#">取消订单</a></p>
+        </li>
+      </ul>
     </div>
   </div>
 

@@ -71,7 +71,7 @@
     display: block;
     width: 207px;
     height: 70px;
-    background-image: url(../static/images/logo.png);
+    background-image: url(../images/logo.png);
     background-size: contain;
    
 }
@@ -123,7 +123,7 @@
     /* display: inline-block; */
     width: 18px;
     height: 18px;
-    background-image: url(../static/images/sprites.png);
+    background-image: url(../images/sprites.png);
     background-position: -79px -69px ;
 }
 
@@ -134,7 +134,7 @@
     height: 23px;
     margin-top: 28px;
     margin-left: 15px;
-    background-image: url(./static/images/sprites.png);
+    background-image: url(../images/sprites.png);
     background-position: -119px -69px;
     vertical-align: middle;
 }
@@ -156,36 +156,24 @@
 
 /* 底部 */
 .footer{
-    float: none;
     height: 342px; 
     background-color: #333;
     
 }
 
-.footer .wrapper{
-    width: 1450px;  
-    margin: 0 auto;
-    border-bottom: 1px solid #434343;
-}
-
 .footer .top{
+    border-bottom: 3px solid #434343;
     position: relative;
+    padding-left: 135px;
     padding-top: 59px;
-    padding-left: 115px;
-    padding-right: 115px;
     height: 175px;  
 }
 
-.footer hr{
-    width: 1393px;
-    height: 1px;
-    margin: 0 auto;
-    border-color: #333;
-}
 
 .footer .top li{
+    position: relative;
     float: left;
-    margin-right: 300px;
+    margin-right: 200px;
     width: 195px;
     height: 58px;
     line-height: 58px;
@@ -199,10 +187,12 @@
 
 .footer .top li::before{
     position: absolute;
-    content:'';
+    left: 0;
+    top: 0;
+    content:"";
     width: 58px;
     height: 58px;
-    background-image: url(./static/images/sprites.png);
+    background-image: url(../images/sprites.png);
     vertical-align: middle;
 }
 

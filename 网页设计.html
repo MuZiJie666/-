@@ -32,8 +32,13 @@
     .lj0 {
       display: block;
       width: 1380px;
-      height: 2000px;
-      margin: 0 auto;
+      margin: 0 auto
+    }
+
+    .lj0::after {
+      content: '';
+      display: block;
+      clear: both;
     }
 
     .lj1 {
@@ -107,7 +112,7 @@
     }
 
     .sp-name {
-      padding: 70px 0 0 0;
+      padding: 80px 0 0 0;
       width: 270px;
       font-size: 20px;
       overflow: hidden;
@@ -125,14 +130,16 @@
 
     .sp-zt {
       position: relative;
-      bottom: 35px;
+      bottom: 50px;
       right: 120px;
       color: #e05e30;
     }
 
-    .sp-imgsize a {
+    .sp-imgsize .wuliu {
       position: relative;
       right: 62px;
+      bottom: 20px;
+      ;
       color: #b6b6b6;
     }
 
@@ -145,7 +152,7 @@
 
     .sp-zprice {
       margin-top: 50px;
-      color: red;
+      color: #d54633;
     }
 
     .lj4 .sp-xq {
@@ -167,13 +174,57 @@
     .sp-fk a {
       color: white;
     }
-    .lj5{
+
+    .lj5 {
       width: 1190px;
-      margin-left: 10px;
-      margin-top: 10px;
-      height: 250px;
+      margin: 10px;
+      padding: 10px;
       display: block;
       background-color: white;
+    }
+
+    .jg {
+      font-size: 28px;
+      color: #ba3e2d;
+    }
+
+    .lj5 ul {
+      border: 1px, solid, #b6b6b650;
+      border-width: 1px 0 0 0;
+      margin-top: 10px;
+      height: 200px;
+    }
+
+    .lj5 ul li {
+      margin: 25px 25px 0 25px;
+    }
+
+    .lj5 ul img {
+      width: 242px;
+    }
+
+    .lj6 {
+      width: 1190px;
+      margin: 10px;
+      padding: 10px;
+      display: block;
+      background-color: white;
+    }
+
+
+    .lj6 ul {
+      border: 1px, solid, #b6b6b650;
+      border-width: 1px 0 0 0;
+      margin-top: 10px;
+      height: 200px;
+    }
+
+    .lj6 ul li {
+      margin: 25px 25px 0 25px;
+    }
+
+    .lj6 ul img {
+      width: 242px;
     }
   </style>
 </head>
@@ -306,13 +357,16 @@
     </div>
     <div class="lj4 fl">
       <h5>我的订单</h5>
-      <a class="sp-all fr" href="#">查看全部 ></a>
+      <a class="sp-all fr" href="#全部">查看全部 ></a>
       <ul>
         <li class="sp-imgsize fl">
-          <img class="fl" src="./static/uploads/clothes_goods_5.jpg" alt="">
-          <p class="sp-name">拉夫劳伦t恤男正品圆领短袖好看好看好看</p>
+          <a href="#详情"><img class="fl" src="./static/uploads/clothes_goods_5.jpg" alt="">
+          </a>
+          <p class="sp-name"><a href="#">拉夫劳伦t恤男正品圆领短袖好看好看好看</a></p>
           <p class="sp-size">颜色：白色 尺码：M 数量：1</p>
-          <p class="sp-zt fr">待付款</p>
+          <a href="#状态">
+            <p class="sp-zt fr">待付款</p>
+          </a>
         </li>
         <li class="sp-price fl">
           <p class="sp-zprice">¥99.00</p>
@@ -320,18 +374,21 @@
           <p>在线支付</p>
         </li>
         <li class="sp-xq fl">
-          <p class="sp-fk"><a href="#">立即付款</a></p>
-          <p><a href="#">查看详情</a></p>
-          <p><a href="#">取消订单</a></p>
+          <p class="sp-fk"><a href="#立即付款">立即付款</a></p>
+          <p><a href="#查看详情">查看详情</a></p>
+          <p><a href="#取消订单">取消订单</a></p>
         </li>
       </ul>
       <ul>
         <li class="sp-imgsize fl">
-          <img class="fl" src="./static/uploads/clothes_goods_6.jpg" alt="">
-          <p class="sp-name">李宁跑步鞋男鞋空气弧耐用好看好看好看</p>
+          <a href="#">
+            <img class="fl" src="./static/uploads/clothes_goods_6.jpg" alt="">
+          </a>
+          <p class="sp-name"><a href="#">李宁跑步鞋男鞋空气弧耐用好看好看好看</a></p>
           <p class="sp-size">颜色：灰色 尺码：42 数量：1</p>
-          <p class="sp-zt fr">代收货</p>
-          <a class="fr" href="#">查看物流</a>
+          <a href="#状态">
+            <p class="sp-zt fr">代收货</p>
+          </a><a class="fr wuliu" href="#查看物流">查看物流</a>
         </li>
         <li class="sp-price fl">
           <p class="sp-zprice">¥199.00</p>
@@ -339,9 +396,9 @@
           <p>在线支付</p>
         </li>
         <li class="sp-xq fl">
-          <p class="sp-fk"><a href="#">确认收货</a></p>
-          <p><a href="#">查看详情</a></p>
-          <p><a href="#">取消订单</a></p>
+          <p class="sp-fk"><a href="#确认收货">确认收货</a></p>
+          <p><a href="#查看详情">查看详情</a></p>
+          <p><a href="#取消订单">取消订单</a></p>
         </li>
       </ul>
     </div>
@@ -349,13 +406,68 @@
     <div class="lj5 fl">
       <h5>我的收藏</h5>
       <ul>
-        <li>
-          <img src="" alt="">
-          6
-        </li>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
+        <li class="fl"><a href="">
+            <img src="/static/uploads/sp-1.jpg" alt="">
+            <p>沙宣经典洗护套装</p>
+            <p>750ml送200ml</p>
+            <p>洗护用品</p>
+            <p class="jg">&yen79</p>
+          </a></li>
+        <li class="fl"><a href="#">
+            <img src="/static/uploads/sp-2.jpg" alt="">
+            <p>红功夫 麻辣小龙虾1.5kg</p>
+            <p>4-6钱/25-32只</p>
+            <p>火锅食材</p>
+            <p class="jg">&yen79</p>
+          </a></li>
+        <li class="fl"><a href="#">
+            <img src="/static/uploads/sp-4.jpg" alt="">
+            <p>渔公码头 大连鲜食入味</p>
+            <p>即食海参 辽参刺参</p>
+            <p>调味海鲜</p>
+            <p class="jg">&yen899</p>
+          </a></li>
+        <li class="fl"><a href="#">
+            <img src="/static/uploads/sp-3.jpg" alt="">
+            <p>三都港冷冻无公害黄花鱼</p>
+            <p>700g 2条 袋装</p>
+            <p>海鲜水产</p>
+            <p class="jg">&yen49</p>
+          </a></li>
+      </ul>
+    </div>
+    <!-- 我的足迹 -->
+    <div class="lj6 fl">
+      <h5>我的足迹</h5>
+      <ul>
+        <li class="fl"><a href="">
+            <img src="/static/uploads/sp-1.jpg" alt="">
+            <p>沙宣经典洗护套装</p>
+            <p>750ml送200ml</p>
+            <p>洗护用品</p>
+            <p class="jg">&yen79</p>
+          </a></li>
+        <li class="fl"><a href="#">
+            <img src="/static/uploads/sp-2.jpg" alt="">
+            <p>红功夫 麻辣小龙虾1.5kg</p>
+            <p>4-6钱/25-32只</p>
+            <p>火锅食材</p>
+            <p class="jg">&yen79</p>
+          </a></li>
+        <li class="fl"><a href="#">
+            <img src="/static/uploads/sp-4.jpg" alt="">
+            <p>渔公码头 大连鲜食入味</p>
+            <p>即食海参 辽参刺参</p>
+            <p>调味海鲜</p>
+            <p class="jg">&yen899</p>
+          </a></li>
+        <li class="fl"><a href="#">
+            <img src="/static/uploads/sp-3.jpg" alt="">
+            <p>三都港冷冻无公害黄花鱼</p>
+            <p>700g 2条 袋装</p>
+            <p>海鲜水产</p>
+            <p class="jg">&yen49</p>
+          </a></li>
       </ul>
     </div>
   </div>

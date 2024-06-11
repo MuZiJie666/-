@@ -1,257 +1,640 @@
-div.xtx{
-    background-color:rgb(243, 243, 243);
+/* index.css首页样式 */
+.banner {
+    height: 500px;
+    background-color: #f5f5f5;
 }
-div.xtx1{
-    width: 1240px;
-    margin: 0 auto;
-    position: relative;
-}
-.xtx1 ul li .xtx2{
-    /* transition: margin-left 2s; */
-    transition: all 2s cubic-bezier(0,1,0,0.9) 0s;
-}
-.xtx1 ul li .xtx2:hover{
-    /* margin-left: 10px; */
-    transform: translate(10px,0);
-    background-color:rgba(60,179,113,0.2);
-}
-.xtx1 li:hover{background-color: rgba(60,179,113,0.8);}
 
-.xtx1 li{
-    background-color: rgba(0,0,0,0.5);
-    width: 240px;
+.banner .wrapper {
+    position: relative;
+    height: 500px;
 }
-div .xtx1 li .xtx2{
-    display: block;
+
+.banner .aside{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 500px;
+    background-color: rgba(0,0, 0, .8);
+}
+
+.banner .aside li{
     height: 50px;
     line-height: 50px;
-    margin: 0 auto;
-    color: white;
-    padding: 0 30px;
 }
 
-.xtx3{
-    width: 1000px;
-    height: 500px;
-    margin: 1rem auto;
-    overflow: hidden;
-    /* position: relative; */
+
+.banner .aside li a{
+    position: relative;
+    display: block;  
+    padding-left: 36px; 
+    padding-right: 19px;
+    height: 50px; 
+    color: #fff;
+}
+
+.banner .aside a span{
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.banner .aside a:hover{
+    background-color: #27ba9b;
+}
+
+.banner .aside a::after{
+    content: "";
     position: absolute;
-    top: -16px;
-    left: 240px;
+    top: 19px;
+    right: 19px;
+    width: 6px;
+    height: 11px;
+    background-image: url(../images/sprites.png);
+    background-position:-80px -110px ;
 }
-.xtx3 .xtx4 {
-    width: 5000px;
-    height: 500px;
+
+.prev,
+.next{
     position: absolute;
-    display: flex;
-    animation: run 15s ease infinite;
-}
-.xtx4 li{
-    flex: 0 0 auto;
-    width: 1000px;
-}
-.xtx4 li a,.xtx4 li img{
-    display: block;
-    width: 1000px;
-    height: 500px;
-}
-/*动画关键帧*/
-@keyframes run{
-    0%,10%{
-        transform: translateX(0);
-    }
-    20%,30%{
-        transform: translateX(-1000px);
-    }
-    40%,50%{
-        transform: translateX(-2000px);
-    }
-    60%,70%{
-        transform: translateX(-3000px);
-    }
-    80%,90%{
-        transform: translateX(-4000px);
-    }
-    100%{
-        transform: translateX(0);
-    }
+    top:230px;
+    width: 45px;
+    height: 45px;
+    background-color: rgba(0,0 ,0,.2);
+    border-radius: 50%;
+    background-image: url(../images/sprites.png);
 }
 
-
-.xtx5{
-    width: 1240px;
-    height: 500px;
-    padding-top: 30px;
-    margin: 0 auto;
+/* 位置图负责两件事：改变箭头在盒子里面的位置；改变精灵图的位置
+ 导致在精灵图中测量尺寸不准确
+ 解决方法
+ 1. 借助谷歌工具调试具体位置
+ 2.书写标签时，a负责盒子里面添加一个span负责箭头*/
+.prev{
+        left:260px;
+        background-position:14px -60px;
 }
-.xtx6{
-    width: 1240px;
-    height: 100px;
+.next{
+        right: 10px;
+        background-position:-23px -60px;
+}
+
+.banner ol{
+    position: absolute;
+    bottom: 30px;
+    left: 620px;
+    width: 120px;
+    height: 10px;
+    
+}
+
+.banner ol li{
     float: left;
+    margin-right:14px ;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    cursor: pointer;
 }
-.xtx6 a{
+
+.goods {
+    height: 516px;
+}
+
+.goods .one{
+    height: 114px;
+    line-height: 114px;
+} 
+
+.goods .one h2{
+    float: left;
+    font-size: 29px;
+    font-weight: 400;
+    height: 114px;
+}
+
+.goods .one h2 span{
+    font-size: 16px;   
+    margin-left: 35px;
+    color: rgba(0,0 ,0,.2);
+}
+
+.goods .one a{
     float: right;
-}
-.xtx6 a:hover{
-    color: #39bfa3;
-}
-.xtx6 p{
-    font-size: 30px;
-    font-weight: 2000px;
-    height: 50px;
-    line-height: 100px;
-}
-.xtx6 p span{
-    font-size: 15px;
-    color: rgba(0, 0, 0, 0.5);
-    margin-left: 30px;
+    margin-right: 20px;
+    font-size: 16px;
+    color: rgba(0,0 ,0,.2);
 }
 
-
-.xtx7 a img{
-    width: 305px;
-    height: 305px;
-    margin-right: 5px;
+.goods .one a::after{
+  content: '';
+  display: inline-block;
+  width: 7px;
+  height: 13px;
+  margin-left: 10px;
+  background-image: url(../images/sprites.png);
+  background-position: 0 -110px;
 }
-.xtx7{
-    float: left;
+
+.goods .two{
+    height: 402px;
+}
+
+.goods .two li{
     position: relative;
-    transition: all 0.7s;
-}
-.xtx7 p{
-    margin-right: 5px;
-    width: 305px;
-    text-align: center;
-    font-size: 20px;
-    background-color: rgba(127,255,212,0.2);
-}
-.xtx7 div{
-    padding-bottom: 10px;
-    font-size: 20px;
-    text-align: center;
-    margin-right: 5px;
-    background-color: rgba(127,255,212,0.2);
-    color: rgba(255,64,64, 1);
-}
-.xtx7 .xtx8{
-    position: absolute;
-    bottom: 300px;
-    left: 20px;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    color: #39bfa3;
-    border: 2px solid #39bfa3;
-    border-radius: 8px;
-    padding: 10px 0;
-}
-
-
-.xtx9{
     float: left;
-    transition: all 0.7s;
-}
-.xtx9 a img{
-    width: 305px;
-    height: 305px;
-    margin-right: 5px;
-}
-.xtx9 p{
-    margin-right: 5px;
-    width: 305px;
+    margin-right: 8px;
     text-align: center;
-    font-size: 22px;
-    background-color: rgba(255,255,255,1);
+    width: 304px;
+    transition: all 0.7s;  
+    height: 402px;
+    background-color: #f0f9f4;
 }
-.xtx9 div{
-    padding-bottom: 15px;
-    text-align: center;
-    margin-right: 5px;
-    font-size: 15px;
-    background-color: rgba(255,255,255,1);
-    color: rgba(0,0,0, 0.5);
-}
-
-div .xtx7:hover,div .xtx9:hover{
-    box-shadow: 0 0 5px rgba(0, 0, 0,0.7);
+.goods .two li:hover{
+    box-shadow: 0 0 5px rgba(0,0 ,0,0.7);
     transform: translate(0,-10px);
-}/*图片效果*/
+}
 
-.xtx10{
-    margin-top: 5px;
-    background-color:rgb(243, 243, 243);
+.goods .two li:last-child{
+    margin-right: 0;
 }
-.xtx10 .xtx6 a{
+
+.goods .two li img{
+    width: 304px;
+    background-size: cover;
+}
+
+.goods .two li h3{
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    
+}
+
+.goods .two li div{
+    color: #9a2e1f;
+    margin-bottom: 21px;
+}
+
+.goods .two li div span{
+    font-size: 23px;
+}
+
+.goods .two li b{
+    position: absolute;
+    left: 17px;
+    top: 18px;
+    width: 28px;
+    height:51px;
+    border: 1px solid #27ba9b;
+    border-radius: 2px;
+    font-size: 18px;
+    color: #27ba9b;
+    font-weight: 400px;
+    line-height: 24px;
+}
+
+
+.out {
+    height: 516px;
+}
+
+.out .three{
+    height: 114px;
+    line-height: 114px;
+} 
+
+.out .three h2{
+    float: left;
+    font-size: 29px;
+    font-weight: 400;
+    height: 114px;
+}
+
+.out .three h2 span{
+    font-size: 16px;   
+    margin-left: 35px;
+    color: rgba(0,0 ,0,.2);
+}
+
+.out .four{
+    height: 402px;
+}
+
+.out .four li{
     position: relative;
+    float: left;
+    margin-right: 8px;
+    text-align: center;
+    width: 304px;
+    height: 402px;
+    transition: all 0.7s;
+    background-color: #ffffff;
+   
 }
-.xtx10 .xtx6 a div{
+
+.out .four li:hover{
+    box-shadow: 0 0 10px black;
+    transform: translate(0 ,-10px);
+   transition: width 5s, all.5s ease-in-out;
+
+}
+
+.out .four li:last-child{
+    margin-right: 0;
+}
+
+.out .four li img{
+    width: 304px;
+    background-size: cover;
+}
+
+.out .four li h3{
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    
+}
+
+/* .out .four li div{
+    color: #9a2e1f;
+    margin-bottom: 21px;
+} */
+
+.out .four li div span{
+    font-size: 16px;      
+    color: rgba(0,0 ,0,.2);
+    text-align: center;
+}
+
+
+.got {
+    height: 467px;
+}
+
+.nu{
+    background-color: #f4f4f4;
+}
+
+.got .five{
+    position: relative;;
+    height: 114px;
+    line-height: 114px;
+} 
+
+.got .five h2{
+    float: left;
+    font-size: 29px;
+    font-weight: 400;
+    height: 114px;
+}
+
+.got .five h2 span{
+    font-size: 16px;   
+    margin-left: 35px;
+    color: rgba(0,0 ,0,.2);
+}
+
+.got .five .a{
+    position: absolute;
+
+    right: 0;
+    top: 77px;
     width: 20px;
     height: 20px;
-    text-align: center;
-    background-color: rgb(223, 223, 223);
+    background-color: #e2e2e2;
+    background-image: url(../images/sprites.png);
+    background-position:  -34px -106px;
+ }   
+
+.got .five .a:hover{
+    background-color: #27ba9b;
 }
-.xtx10 .xtx6 a div:hover{background-color: #39bfa3;}
-.xtx10 .xtx6 a div.a2{
-    position: absolute;
-    left: -70px;
-    top: -10px;
+
+
+.got .six{
+    height: 353px;
 }
-.xtx10 .xtx6 a div.a3{
-    position: absolute;
-    left: -40px;
-    top: -10px;
-}
-.xtx10 div .xtx11 img{
-    width: 238px;
+
+.got .six li{
+    position: relative;
+    float: left;
+    margin-right: 5px;
+    width: 244px;
     height: 306px;
+    transition: all 0.7s;   
+   
+}
+
+.got .six li:hover{
+    box-shadow: 0 0 10px black;
+    transform: translate(0 ,-10px);
+   /* transition: width 5s, all.5s ease-in-out; */
+
+}
+
+.got .six li:last-child{
+    margin-right: 0;
+}
+
+.got .six li img{
+    width: 241px;
+    height: 306px;
+    background-size: cover;
 }
 
 
-.xtx12{
-    width: 1240px;
-    height: 750px;
-    padding-top: 30px;
-    margin: 0 auto;
+.shengxian .have{
+    height: 96px;
+    line-height: 96px;
 }
-.xtx13 li{
+.shengxian .have h2{
+    float: left;
+    font-size: 29px;
+    font-weight: 400;
+}
+
+
+.shengxian .have .more{
+    float: right;
+    color: #999;
+    margin-right: 20px;
+}
+.shengxian .have ul{
+    margin-right: 65px;
+    float: right;
+}
+.shengxian .have ul li{
     float: left;
 }
-.xtx13{
-    margin-left: 600px;
-    margin-bottom: 10px;
+.shengxian .have ul li a{
+    padding: 2px 7px;
+    margin-left: 6px;
 }
-.xtx13 li a{
-    display: block;
-    width: 60px;
-    height: 30px;
-    text-align: center;
-    line-height: 30px;
+.shengxian .have li a:hover{
+    background-color: #27ba9b;
+    color: #fff;
 }
-.xtx13 li a:hover{
-    color: white;
-    background-color: #39bfa3;
+.shengxian .have .more::after{
+    content: '';
+    display: inline-block;
+    width: 7px;
+    height: 13px;
+    margin-left: 10px;
+    background-image: url(../images/sprites.png);
+    background-position: 0 -110px;
+  }
+
+.shengxian .into{
+    height: 610px;
+    
 }
 
-.xtx9.xtx14 img{
-    width: 240px;
-    height: 620px;
+.shengxian .into .left{
+    transition: all 0.7s;
+    float: left;
+  width: 240px;
+  height: 610px;
 }
-.xtx7.xtx15 img{
-    width: 200px;
-    height: 180px;
+.shengxian .into .left:hover{
+    box-shadow: 0 0 10px black;
+    transform: translate(0 ,-10px);
+   transition: width 5s, all.5s ease-in-out;
 }
-.xtx7.xtx15{
-    margin-left: 40px;
+
+
+.shengxian .into .right{
+    float: right;
+    height: 610px;
+    width: 1000px;
+    
 }
-.xtx7.xtx15 p{
-    text-align: left;
-    width: 200px;
-    padding: 0 15px;
-    background-color: white;
+
+.shengxian .into .right li{
+    overflow: hidden;
+    position: relative;
+    border: 1px solid 
+    transparent;
+    transition: all 0.7s;
+    float: left;
+    width: 242px;
+    height: 304px;
+    background-color: #fff;
+    margin: 0 0 3px 8px;
+}
+.shengxian .into .right li:hover{
+    border: 1px solid hsl(167, 65%, 44%);
+    box-shadow: 0 0 10px black;
+    transform: translate(0 ,-10px);
+   transition: width 5s, all.5s ease-in-out;
+}
+
+.shengxian .into .right li img{
+    display: block;
+    width: 184px;
+    height: 184px;
+    margin: 18px auto 12px;
+}
+
+.shengxian .into .right li h4{
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0 30px;
+    height: 54px;
+}
+.shengxian .into .right li p{
+    color: #9a2e1f;
+    margin-left: 30px;
+}
+.shengxian .into .right li p span{
+    font-size: 22px;
+}
+
+
+.shengxian .into .right .baby{
+    position: absolute;
+    left: 0;
+    bottom: -84px;
+    transition:.4s;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    height: 84px;
+    background: #27ba9b;
+}
+/* 鼠标经过了li，发现盒子移动 */
+.shengxian .into .right li:hover .baby{
+bottom: 0;
+}
+
+.shengxian .into .right .baby h3{
+    width: 125px;
+    height: 35px;
+    margin: 12px auto 5px;
+    font-size: 18px;
+    font-weight: 400;
+    border-bottom: 2px solid #a9dbcc;
+}
+.shengxian .into .right .baby a{
+    color: #fff;
+}
+
+
+.concat{
+    height: 300px;
+}
+
+.concat .tact{
+padding-top: 75px;
+}
+
+.concat .tact dl{
+    float: left;
+    width: 310px;
+    padding:0 55px;
+
+}
+
+.concat .tact dl dt{
+    
+    color: #999;
+    text-align: center;
+}
+.concat .tact dl dd{
+    
+    float: left;
+    width: 92px;
+    height: 92px;
+    border: 1px solid #eee;
+    margin-top: 35px;
+    text-align: center;
+}
+
+.concat .tact dl dd:nth-child(2){
+    margin-right: 5px;
+    
+}
+.concat .tact dl dd::before{
+      content: "";
+      display: block;
+      width: 38px;
+      height: 30px;
+      margin: 20px auto 10px;            
+}
+.qq::before{
+    background-image: url(../images/sprites.png);
+    background-position: -250px -70px;
+}
+ .phone::before{
+    background-image: url(../images/sprites.png);
+    background-position: -350px -70px;
+}
+.aa::before{
+    background-image: url(../images/sprites.png);
+    background-position: -205px -13px;
+}
+.bb::before{
+    background-image: url(../images/sprites.png);
+    background-position: -300px -14px;
+}
+
+.concat .tact .add .cc img{
+    width: 116px;
+    height: 116px;
+    background-size: cover;
+}
+
+.concat .tact dl img{
+    width: 105px;
+    height: 105px;
+    padding: 5px;
+    margin-left: 0;
+    margin: 8px 8px 8px 8px;
+    background-size: cover;
+    
+    border: 3px solid #f5f5f5;  
+}
+
+.concat .tact .down{
+    position: relative;
+    width: 300px;
+    height: 150px;
+    float:left;
+}
+.concat .tact .down span{
+    padding-left:110px ;
+    color: #999;
+}
+.concat .tact .down img{
+    position: absolute;
+    left:20px;
+    top:50px;
+    border: 2px solid #e2e2e2;
+    width: 105px;
+    height: 105px;
+    padding: 5px;
+    margin-left: 0;
+}
+.concat .tact .down .code{
+    position: absolute;
+    left:153px;
+    top:55px ;
+    width: 100px;
+    height: 50px;
+    color: #999;
+    background-color: #fff;
+}
+ .concat .tact .down .code .updown{
+    border: 1px solid #eee;
+    position: relative;
+    left: 1px;
+    top: 18px;
+    width: 100px;
+    height: 30px;
+    
+}
+ .concat .tact .down .code .updown a{
+    display: block;
+    text-align: center;
+    line-height:30px ;
+    color: #999;
+}
+.concat .tact .down .code .updown a:hover{
+  background-color: #27ba9b;
+  color: #fff;
+}
+
+.concat .tact .tooo{
+
+    width: 300px;
+    height: 190px;
+    float: left;
+    border-left: 1px solid #eee;
+}
+
+.concat .tact .tooo p{
+    text-align: center;
+    color: #999;
+}
+
+.concat .tact .tooo .num{
+      width: 160px;
+      height: 60px;
+      margin-top: 55px;
+      margin-left:70px ;
+}
+
+.concat .tact .tooo .num p{
+    font-size: 25px;
+	font-weight: normal;
+    color: #666666;
+}
+
+.concat .tact .tooo .num .ling{
     font-size: 15px;
+    color: #999;
 }
-.xtx7.xtx15 div{
-    text-align: left;
-    background-color: white;
-    padding: 0 15px;
-}
+

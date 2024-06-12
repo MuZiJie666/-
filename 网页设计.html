@@ -226,6 +226,41 @@
     .lj6 ul img {
       width: 242px;
     }
+
+    /* 列表项默认隐藏删除按钮 */
+    #a1,
+    #a2,
+    #a3,
+    #a4,
+    #a5,
+    #a6,
+    #a7,
+    #a8 {
+      position: relative;
+    }
+
+    .delete-item {
+      position: absolute;
+      top: 1px;
+      left: 225px;
+      display: none;
+    }
+
+    /* 当鼠标悬停在列表项上时显示删除按钮 */
+    li:hover .delete-item {
+      display: inline-block;
+      background-color: #b6b6b6;
+      border-radius: 12px;
+      border: none;
+      color: red;
+      cursor: pointer;
+      font-size: 16px;
+      margin-left: 5px;
+    }
+
+    .delete-item:hover {
+      color: darkred;
+    }
   </style>
 </head>
 
@@ -406,68 +441,68 @@
     <div class="lj5 fl">
       <h5>我的收藏</h5>
       <ul>
-        <li class="fl"><a href="#">
-            <img src="/static/uploads/sp-1.jpg" alt="">
+        <li class="fl" id="a1"><a href="">
+            <img src="/static/uploads/sp-1.jpg" alt="" class="image-hover">
             <p>沙宣经典洗护套装</p>
             <p>750ml送200ml</p>
             <p>洗护用品</p>
             <p class="jg">&yen79</p>
-          </a></li>
-        <li class="fl"><a href="#">
+          </a><button class="delete-item" data-item-id="1">✖️</button></li>
+        <li class="fl" id="a2"><a href="#">
             <img src="/static/uploads/sp-2.jpg" alt="">
             <p>红功夫 麻辣小龙虾1.5kg</p>
             <p>4-6钱/25-32只</p>
             <p>火锅食材</p>
             <p class="jg">&yen79</p>
-          </a></li>
-        <li class="fl"><a href="#">
+          </a><button class="delete-item" data-item-id="1">✖️</button></li>
+        <li class="fl" id="a3"><a href="#">
             <img src="/static/uploads/sp-4.jpg" alt="">
             <p>渔公码头 大连鲜食入味</p>
             <p>即食海参 辽参刺参</p>
             <p>调味海鲜</p>
             <p class="jg">&yen899</p>
-          </a></li>
-        <li class="fl"><a href="#">
+          </a><button class="delete-item" data-item-id="1">✖️</button></li>
+        <li class="fl" id="a4"><a href="#">
             <img src="/static/uploads/sp-3.jpg" alt="">
             <p>三都港冷冻无公害黄花鱼</p>
             <p>700g 2条 袋装</p>
             <p>海鲜水产</p>
             <p class="jg">&yen49</p>
-          </a></li>
+          </a><button class="delete-item" data-item-id="1">✖️</button></li>
       </ul>
     </div>
     <!-- 我的足迹 -->
     <div class="lj6 fl">
       <h5>我的足迹</h5>
-      <ul>
-        <li class="fl"><a href="#">
+      <ul class="lj7">
+        <li class="fl"id="a5"><a href="">
             <img src="/static/uploads/sp-1.jpg" alt="">
             <p>沙宣经典洗护套装</p>
             <p>750ml送200ml</p>
             <p>洗护用品</p>
             <p class="jg">&yen79</p>
-          </a></li>
-        <li class="fl"><a href="#">
+          </a><button class="delete-item" data-item-id="1">✖️</button></li>
+        <li class="fl" id="a6"><a href="#">
             <img src="/static/uploads/sp-2.jpg" alt="">
             <p>红功夫 麻辣小龙虾1.5kg</p>
             <p>4-6钱/25-32只</p>
             <p>火锅食材</p>
             <p class="jg">&yen79</p>
-          </a></li>
-        <li class="fl"><a href="#">
+          </a><button class="delete-item" data-item-id="1">✖️</button></li>
+        <li class="fl" id="a7"><a href="#">
             <img src="/static/uploads/sp-4.jpg" alt="">
             <p>渔公码头 大连鲜食入味</p>
             <p>即食海参 辽参刺参</p>
             <p>调味海鲜</p>
             <p class="jg">&yen899</p>
-          </a></li>
-        <li class="fl"><a href="#">
+          </a><button class="delete-item" data-item-id="1">✖️</button></li>
+        <li class="fl" id="a8"><a href="#">
             <img src="/static/uploads/sp-3.jpg" alt="">
             <p>三都港冷冻无公害黄花鱼</p>
             <p>700g 2条 袋装</p>
             <p>海鲜水产</p>
             <p class="jg">&yen49</p>
-          </a></li>
+          </a><button class="delete-item" data-item-id="1">✖️</button></li>
       </ul>
     </div>
   </div>
@@ -502,6 +537,19 @@
       <p>CopyRight @ 小兔鲜儿 </p>
     </div>
   </div>
+  <script>
+    document.querySelectorAll('.delete-item').forEach(button => {
+      button.addEventListener('click', (event) => {
+        event.preventDefault();
+
+        // 获取当前点击的删除按钮所在的父亲元素（即列表项）
+        const listItem = event.target.parentElement;
+
+        // 从父元素中移除当前列表项，实现前端删除效果
+        listItem.remove();
+      });
+    });
+  </script>
 </body>
 
 </html>

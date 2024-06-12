@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小兔鲜儿-登录</title>
+    <meta name="description" content="小兔鲜儿官网，致力于打造全球最大的食品、生鲜电商购物平台。">
+    <meta name="keywords" content="小兔鲜儿,食品,生鲜,服装,家电,电商,购物">
+    <link rel="shortcut icon" href="./static/favicon.ico" type="image/x-icon">
+    <!-- 按顺序引入，外链式样式表后写的生效 -->
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <!-- 快捷导航 -->
+    <div class="shortcut" id="cuansong">
+        <div class="wrapper">
+            <ul>
+                <li class="bangzhu1"><a href="javascript:;">帮助中心</a>
+                    <div class="bangzhu"><p>有事找啊杰</p><p>热线:10086</p></div>
+                </li>
+                <li class="bangzhu1"><a href="javascript:;">在线客服</a>
+                    <div class="bangzhu bangzhu2"><p>小本生意🫡没有客服</p></div>
+                </li>
+                <li><a href="#"><span></span>手机版</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="header wrapper">
+        <div class="logo">
+            <h1><a href="#"></a></h1>
+        </div>
+        <div class="dl"><a href="./index.html">返回首页></a></div>
+    </div>
+
+    <div class="dl1">
+        <div class="dl2">
+            <video muted autoplay="autoplay" loop="loop" disablepictureinpicture>
+                <source src="./static/uploads/156278-812085342_tiny.mp4" type="video/mp4">
+                </source>
+            </video>
+            <div class="dl3">
+                <span>账户登录</span>
+                <form>
+                    <div class="dl4">
+                        <input type="text" placeholder="请创建一个名称" name="phone" id="phone">
+                    </div>
+                    <div class="dl4">
+                        <input type="text" placeholder="请输入用户名称/手机号码" name="username">
+                    </div>
+                    <div class="dl4">
+                        <input type="password" placeholder="请输入密码" name="password">
+                    </div>
+                    <div class="dl5">
+                        <label for="jg">
+                            <input type="checkbox" value="1" id="jg" name="">
+                        </label>我已同意
+                        <a href="javascript:;">《用户协议》</a>和
+                        <a href="javascript:;">《隐私政策》</a>
+                    </div>
+                    <div>
+                        <button type="submit">登录</button>
+                    </div>
+                    <div>
+                        <a href="./mima.html" class="bd">忘记密码？</a>
+                        <a href="./zhuche.html" class="bd1">免费注册</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--结尾-->
+    <div class="xtx5 xtx17">
+        <div class="xtx18">
+            <p class="a4">客户服务</p>
+            <div><a href="javascript:;" class="a5"><img src="./static/images/xtx132851.1.png" alt="">
+                    <p class="a6">在线客服</p>
+                </a>
+                <a href="javascript:;"><img src="./static/images/xtx132904.2.png" alt="">
+                    <p class="a6">问题反馈</p>
+                </a>
+            </div>
+        </div>
+        <div class="xtx18">
+            <p class="a4">关注我们</p>
+            <div>
+                <a href="javascript:;" class="a5"><img src="./static/images/xtx132913.3.png" alt="">
+                    <p class="a6">公众号</p>
+                </a>
+                <a href="javascript:;"><img src="./static/images/xtx132923.4.png" alt="">
+                    <p class="a6">微博</p>
+                </a>
+            </div>
+        </div>
+        <div class="xtx18 a9">
+            <p class="a4">下载APP</p>
+            <div class="a10">
+                <img src="./static/uploads/qrcode.png" alt="">
+                <p class="a8">扫描二维码</p>
+                <p class="a8">立即下载APP</p>
+                <a href="">
+                    <p class="a7">立即下载</p>
+                </a>
+            </div>
+        </div>
+        <div class="xtx18 a11">
+            <p class="a4">服务热线</p>
+            <div>
+                <p class="a8">号码:10086</p>
+                <p class="a8">周一至周日 8:00-18:00</p>
+            </div>
+        </div>
+    </div>
+    <!-- 版权区域 -->
+    <div class="footer">
+        <div class="wrapper">
+            <div class="top">
+                <ul>
+                    <li>
+                        <span>价格亲民</span>
+                    </li>
+                    <li>
+                        <span>物流快捷</span>
+                    </li>
+                    <li>
+                        <span>品质新鲜</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="buttom">
+            <p>
+                <a href="#">关于我们</a> |
+                <a href="#">帮助中心</a> |
+                <a href="#">售后服务</a> |
+                <a href="#">配送与验收</a> |
+                <a href="#">商务合作</a> |
+                <a href="#">搜索推荐</a> |
+                <a href="#">友情链接</a>
+            </p>
+            <p>CopyRight @ 小兔鲜儿 </p>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector("form").addEventListener("submit", function (event) {
+            // 获取表单输入值
+            var phone = document.querySelector("input[name=phone]").value;
+            var username = document.querySelector("input[name=username]").value;
+            var password = document.querySelector("input[name=password]").value;
+            var jg = document.querySelector("#jg").checked;
+
+            // 验证用户名非空
+            if (phone.trim() === "") {
+                alert("名称不能为空！");
+                event.preventDefault(); // 阻止表单提交
+                return false;
+            }
+            if (username.trim() === "") {
+                alert("用户名不能为空！");
+                event.preventDefault(); // 阻止表单提交
+                return false;
+            }
+            // 验证密码非空
+            if (password.trim() === "") {
+                alert("密码不能为空！");
+                event.preventDefault();
+                return false;
+            }
+
+            // 验证是否同意用户协议
+            if (!jg) {
+                alert("您必须同意《用户协议》和《隐私政策》才能继续！");
+                event.preventDefault();
+                return false;
+            }
+            // 如果所有验证都通过，则允许表单提交
+            if (phone.trim() !== "" && username.trim() !== "" && password.trim() !== "" && jg) {
+                // 阻止默认的表单提交行为（如果使用ajax处理登录或有其他逻辑，这句可能不需要）
+                event.preventDefault();
+
+                // 页面跳转逻辑
+                window.location.href = "./index1.html"; // 修改为目标页面的路径
+            }
+        });
+
+        //获取值
+
+        // function addUsernameToUrl(form) {
+        //     // 获取用户名  
+        //     var phone = form.phone.value;
+
+        //     // 修改表单的 action 属性以包含用户名  
+        //     // 注意：这里假设你的服务器可以处理这样的 URL 参数，或者只是用于演示目的  
+        //     form.action = 'nextpage.html?phone=' + encodeURIComponent(phone);
+
+        //     // 允许表单继续提交  
+        //     return true;
+        // }  
+        if (phone.trim() !== "" && username.trim() !== "" && password.trim() !== "" && jg) {
+            // 将phone值附加到URL作为查询参数
+            window.location.href = "./index1.html?phone=" + encodeURIComponent(phone);
+        }
+        //获取值
+
+    </script>
+
+</body>
+
+</html>

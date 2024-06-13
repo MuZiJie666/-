@@ -162,7 +162,7 @@
   .amont .price {
     color: #cf4444;
   }
-  .footer {
+  .footer1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -174,18 +174,18 @@
     height: 21.3333vw;
     background-color: #fff;
   }
-  .footer .price {
+  .footer1 .price {
     font-size: 2.9333vw;
   }
-  .footer .price span {
+  .footer1 .price span {
     font-size: 4.8vw;
     color: #cf4444;
   }
-  .footer .price span i {
+  .footer1 .price span i {
     font-size: 5.3333vw;
     font-weight: 800;
   }
-  .footer .pay {
+  .footer1 .pay {
     width: 24.2667vw;
     height: 9.3333vw;
     text-align: center;
@@ -194,7 +194,7 @@
     background-image: linear-gradient(90deg, #6fc2aa 5%, #54b196 100%);
     border-radius: 0.8vw;
   }
-  .footer .pay a {
+  .footer1 .pay a {
     display: block;
     width: 24.2667vw;
     height: 9.3333vw;
